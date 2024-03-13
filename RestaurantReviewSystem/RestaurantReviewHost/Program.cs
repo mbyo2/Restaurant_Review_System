@@ -18,7 +18,7 @@ namespace RestaurantReviewHost
 
             ServiceHost host = new ServiceHost(t, tcp, http);
             host.Open();
-            Console.WriteLine("Host Started @ " + DateTime.Now.ToString());
+            Console.WriteLine("Host Started @ " + DateTime.UtcNow.ToString());
             Console.ReadLine();
             host.Close();
         }
